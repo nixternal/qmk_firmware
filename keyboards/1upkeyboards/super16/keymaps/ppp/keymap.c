@@ -48,7 +48,8 @@ void p1_tap (qk_tap_dance_state_t *state, void *user_data) {
         register_code (KC_F1);
     } else if (state->count == 2) {     // Group/Loop
         register_code (KC_LWIN);
-        register_code (KC_F2);
+        register_code (KC_LALT);
+        register_code (KC_F1);
     }
 }
 
@@ -58,7 +59,8 @@ void p1_tap_end (qk_tap_dance_state_t *state, void *user_data) {
         unregister_code (KC_F1);
     } else {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F2);
+        unregister_code (KC_LALT);
+        unregister_code (KC_F1);
     }
 }
 
@@ -66,20 +68,22 @@ void p1_tap_end (qk_tap_dance_state_t *state, void *user_data) {
 void p2_tap (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {            // Scene
         register_code (KC_LWIN);
-        register_code (KC_F3);
+        register_code (KC_F2);
     } else if (state->count == 2) {     // Group/Loop
         register_code (KC_LWIN);
-        register_code (KC_F4);
+        register_code (KC_LALT);
+        register_code (KC_F2);
     }
 }
 
 void p2_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F3);
+        unregister_code (KC_F2);
     } else {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F4);
+        unregister_code (KC_LALT);
+        unregister_code (KC_F2);
     }
 }
 
@@ -87,20 +91,22 @@ void p2_tap_end (qk_tap_dance_state_t *state, void *user_data) {
 void p3_tap (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {            // Scene
         register_code (KC_LWIN);
-        register_code (KC_F5);
+        register_code (KC_F3);
     } else if (state->count == 2) {     // Group/Loop
         register_code (KC_LWIN);
-        register_code (KC_F6);
+        register_code (KC_LALT);
+        register_code (KC_F3);
     }
 }
 
 void p3_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F5);
+        unregister_code (KC_F3);
     } else {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F6);
+        unregister_code (KC_LALT);
+        unregister_code (KC_F3);
     }
 }
 
@@ -108,20 +114,22 @@ void p3_tap_end (qk_tap_dance_state_t *state, void *user_data) {
 void p4_tap (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {            // Scene
         register_code (KC_LWIN);
-        register_code (KC_F7);
+        register_code (KC_F4);
     } else if (state->count == 2) {     // Group/Loop
         register_code (KC_LWIN);
-        register_code (KC_F8);
+        register_code (KC_LALT);
+        register_code (KC_F4);
     }
 }
 
 void p4_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F7);
+        unregister_code (KC_F4);
     } else {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F8);
+        unregister_code (KC_LALT);
+        unregister_code (KC_F4);
     }
 }
 
@@ -129,20 +137,22 @@ void p4_tap_end (qk_tap_dance_state_t *state, void *user_data) {
 void p5_tap (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {            // Scene
         register_code (KC_LWIN);
-        register_code (KC_F9);
+        register_code (KC_F5);
     } else if (state->count == 2) {     // Group/Loop
         register_code (KC_LWIN);
-        register_code (KC_F10);
+        register_code (KC_LALT);
+        register_code (KC_F5);
     }
 }
 
 void p5_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F9);
+        unregister_code (KC_F5);
     } else {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F10);
+        unregister_code (KC_LALT);
+        unregister_code (KC_F5);
     }
 }
 
@@ -150,20 +160,22 @@ void p5_tap_end (qk_tap_dance_state_t *state, void *user_data) {
 void p6_tap (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {            // Scene
         register_code (KC_LWIN);
-        register_code (KC_F11);
+        register_code (KC_F6);
     } else if (state->count == 2) {     // Group/Loop
         register_code (KC_LWIN);
-        register_code (KC_F12);
+        register_code (KC_LALT);
+        register_code (KC_F6);
     }
 }
 
 void p6_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F11);
+        unregister_code (KC_F6);
     } else {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F12);
+        unregister_code (KC_LALT);
+        unregister_code (KC_F6);
     }
 }
 
@@ -171,20 +183,22 @@ void p6_tap_end (qk_tap_dance_state_t *state, void *user_data) {
 void p7_tap (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {            // Scene
         register_code (KC_LWIN);
-        register_code (KC_F13);
+        register_code (KC_F7);
     } else if (state->count == 2) {     // Group/Loop
         register_code (KC_LWIN);
-        register_code (KC_F14);
+        register_code (KC_LALT);
+        register_code (KC_F7);
     }
 }
 
 void p7_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F13);
+        unregister_code (KC_F7);
     } else {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F14);
+        unregister_code (KC_LALT);
+        unregister_code (KC_F7);
     }
 }
 
@@ -192,20 +206,22 @@ void p7_tap_end (qk_tap_dance_state_t *state, void *user_data) {
 void p8_tap (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {            // Scene
         register_code (KC_LWIN);
-        register_code (KC_F15);
+        register_code (KC_F8);
     } else if (state->count == 2) {     // Group/Loop
         register_code (KC_LWIN);
-        register_code (KC_F16);
+        register_code (KC_LALT);
+        register_code (KC_F8);
     }
 }
 
 void p8_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F15);
+        unregister_code (KC_F8);
     } else {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F16);
+        unregister_code (KC_LALT);
+        unregister_code (KC_F8);
     }
 }
 
@@ -213,20 +229,22 @@ void p8_tap_end (qk_tap_dance_state_t *state, void *user_data) {
 void p9_tap (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {            // Scene
         register_code (KC_LWIN);
-        register_code (KC_F17);
+        register_code (KC_F9);
     } else if (state->count == 2) {     // Group/Loop
         register_code (KC_LWIN);
-        register_code (KC_F18);
+        register_code (KC_LALT);
+        register_code (KC_F9);
     }
 }
 
 void p9_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F17);
+        unregister_code (KC_F9);
     } else {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F18);
+        unregister_code (KC_LALT);
+        unregister_code (KC_F9);
     }
 }
 
@@ -234,20 +252,22 @@ void p9_tap_end (qk_tap_dance_state_t *state, void *user_data) {
 void p10_tap (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {            // Scene
         register_code (KC_LWIN);
-        register_code (KC_F19);
+        register_code (KC_F10);
     } else if (state->count == 2) {     // Group/Loop
         register_code (KC_LWIN);
-        register_code (KC_F20);
+        register_code (KC_LALT);
+        register_code (KC_F10);
     }
 }
 
 void p10_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F19);
+        unregister_code (KC_F10);
     } else {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F20);
+        unregister_code (KC_LALT);
+        unregister_code (KC_F10);
     }
 }
 
@@ -255,20 +275,22 @@ void p10_tap_end (qk_tap_dance_state_t *state, void *user_data) {
 void p11_tap (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {            // Scene
         register_code (KC_LWIN);
-        register_code (KC_F21);
+        register_code (KC_F11);
     } else if (state->count == 2) {     // Group/Loop
         register_code (KC_LWIN);
-        register_code (KC_F22);
+        register_code (KC_LALT);
+        register_code (KC_F11);
     }
 }
 
 void p11_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F21);
+        unregister_code (KC_F11);
     } else {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F22);
+        unregister_code (KC_LALT);
+        unregister_code (KC_F11);
     }
 }
 
@@ -276,20 +298,22 @@ void p11_tap_end (qk_tap_dance_state_t *state, void *user_data) {
 void p12_tap (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {            // Scene
         register_code (KC_LWIN);
-        register_code (KC_F23);
+        register_code (KC_F12);
     } else if (state->count == 2) {     // Group/Loop
         register_code (KC_LWIN);
-        register_code (KC_F24);
+        register_code (KC_LALT);
+        register_code (KC_F12);
     }
 }
 
 void p12_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F23);
+        unregister_code (KC_F12);
     } else {
         unregister_code (KC_LWIN);
-        unregister_code (KC_F24);
+        unregister_code (KC_LALT);
+        unregister_code (KC_F12);
     }
 }
 
@@ -338,9 +362,9 @@ qk_tap_dance_action_t tap_dance_actions[] = {
     [P7] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, p7_tap, p7_tap_end),
     [P8] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, p8_tap, p8_tap_end),
     [P9] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, p9_tap, p9_tap_end),
-    [P10] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, p1_tap, p10_tap_end),
-    [P11] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, p1_tap, p11_tap_end),
-    [P12] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, p1_tap, p12_tap_end),
+    [P10] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, p10_tap, p10_tap_end),
+    [P11] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, p11_tap, p11_tap_end),
+    [P12] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, p12_tap, p12_tap_end),
     [BF1M] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, BackForward1M_tap, BackForward1M_tap_end),
     [BF10S] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, BackForward10S_tap, BackForward10S_tap_end)
 };
