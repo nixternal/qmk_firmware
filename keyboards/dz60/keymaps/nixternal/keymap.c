@@ -10,7 +10,6 @@ enum {
 #define LShftCap TD(TD_KC_LSFT_CAPS)
 #define RShftCap TD(TD_KC_RSFT_CAPS)
 
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Default Layer
  *  ,-----------------------------------------------------------------------------------------.
@@ -48,9 +47,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 	[1] = LAYOUT_60_ansi(
         KC_GRV,     KC_F1,      KC_F2,      KC_F3,      KC_F4,      KC_F5,      KC_F6,      KC_F7,      KC_F8,      KC_F9,      KC_F10,     KC_F11,     KC_F12,     KC_DEL,
-        _______,    _______,    _______,    _______,    _______,    _______,    KC_HOME,    KC_PGDN,    KC_PGUP,    KC_END,     _______,    _______,    _______,    KC_INS,
-        _______,    _______,    _______,    _______,    _______,    _______,    KC_LEFT,    KC_DOWN,    KC_UP,      KC_RGHT,    _______,    _______,    KC_PSCR,
-        _______,    _______,    _______,    _______,    _______,    _______,    _______,    KC_MUTE,    KC_VOLD,    KC_VOLU,    _______,    KC_SLCK,
+        _______,    UC(0x2126), _______,    _______,    _______,    _______,    KC_HOME,    KC_PGDN,    KC_PGUP,    KC_END,     _______,    _______,    _______,    KC_INS,
+        _______,    _______,    _______,    UC(0x00B0), _______,    _______,    KC_LEFT,    KC_DOWN,    KC_UP,      KC_RGHT,    _______,    _______,    KC_PSCR,
+        _______,    _______,    _______,    UC(0x00A9), _______,    _______,    _______,    KC_MUTE,    KC_VOLD,    KC_VOLU,    _______,    KC_SLCK,
         _______,    _______,    _______,    _______,    _______,    _______,    _______,    KC_PAUS
     ),
 
@@ -75,6 +74,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      _______,    KC_NO
     )
 };
+
+void matrix_init_user(void) {
+    set_unicode_input_mode(UC_LNX);
+}
 
 /* Tap Dance Definitions */
 qk_tap_dance_action_t tap_dance_actions[] = {
