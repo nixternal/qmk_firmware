@@ -55,12 +55,12 @@ void p1_tap (qk_tap_dance_state_t *state, void *user_data) {
 
 void p1_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
-        unregister_code (KC_LWIN);
         unregister_code (KC_F1);
+        unregister_code (KC_LWIN);
     } else {
-        unregister_code (KC_LWIN);
-        unregister_code (KC_LALT);
         unregister_code (KC_F1);
+        unregister_code (KC_LALT);
+        unregister_code (KC_LWIN);
     }
 }
 
@@ -78,12 +78,12 @@ void p2_tap (qk_tap_dance_state_t *state, void *user_data) {
 
 void p2_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
-        unregister_code (KC_LWIN);
         unregister_code (KC_F2);
+        unregister_code (KC_LWIN);
     } else {
-        unregister_code (KC_LWIN);
-        unregister_code (KC_LALT);
         unregister_code (KC_F2);
+        unregister_code (KC_LALT);
+        unregister_code (KC_LWIN);
     }
 }
 
@@ -101,12 +101,12 @@ void p3_tap (qk_tap_dance_state_t *state, void *user_data) {
 
 void p3_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
-        unregister_code (KC_LWIN);
         unregister_code (KC_F3);
+        unregister_code (KC_LWIN);
     } else {
-        unregister_code (KC_LWIN);
-        unregister_code (KC_LALT);
         unregister_code (KC_F3);
+        unregister_code (KC_LALT);
+        unregister_code (KC_LWIN);
     }
 }
 
@@ -124,12 +124,12 @@ void p4_tap (qk_tap_dance_state_t *state, void *user_data) {
 
 void p4_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
-        unregister_code (KC_LWIN);
         unregister_code (KC_F4);
+        unregister_code (KC_LWIN);
     } else {
-        unregister_code (KC_LWIN);
-        unregister_code (KC_LALT);
         unregister_code (KC_F4);
+        unregister_code (KC_LALT);
+        unregister_code (KC_LWIN);
     }
 }
 
@@ -137,6 +137,7 @@ void p4_tap_end (qk_tap_dance_state_t *state, void *user_data) {
 void p5_tap (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {            // Scene
         register_code (KC_LWIN);
+        register_code (KC_LSHIFT);
         register_code (KC_F5);
     } else if (state->count == 2) {     // Group/Loop
         register_code (KC_LWIN);
@@ -147,12 +148,13 @@ void p5_tap (qk_tap_dance_state_t *state, void *user_data) {
 
 void p5_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
-        unregister_code (KC_LWIN);
         unregister_code (KC_F5);
+        unregister_code (KC_LSHIFT);
+        unregister_code (KC_LWIN);
     } else {
-        unregister_code (KC_LWIN);
-        unregister_code (KC_LALT);
         unregister_code (KC_F5);
+        unregister_code (KC_LALT);
+        unregister_code (KC_LWIN);
     }
 }
 
@@ -160,6 +162,7 @@ void p5_tap_end (qk_tap_dance_state_t *state, void *user_data) {
 void p6_tap (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {            // Scene
         register_code (KC_LWIN);
+        register_code (KC_LSHIFT);
         register_code (KC_F6);
     } else if (state->count == 2) {     // Group/Loop
         register_code (KC_LWIN);
@@ -170,12 +173,13 @@ void p6_tap (qk_tap_dance_state_t *state, void *user_data) {
 
 void p6_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
-        unregister_code (KC_LWIN);
         unregister_code (KC_F6);
+        unregister_code (KC_LSHIFT);
+        unregister_code (KC_LWIN);
     } else {
-        unregister_code (KC_LWIN);
-        unregister_code (KC_LALT);
         unregister_code (KC_F6);
+        unregister_code (KC_LALT);
+        unregister_code (KC_LWIN);
     }
 }
 
@@ -193,12 +197,12 @@ void p7_tap (qk_tap_dance_state_t *state, void *user_data) {
 
 void p7_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
-        unregister_code (KC_LWIN);
         unregister_code (KC_F7);
+        unregister_code (KC_LWIN);
     } else {
-        unregister_code (KC_LWIN);
-        unregister_code (KC_LALT);
         unregister_code (KC_F7);
+        unregister_code (KC_LALT);
+        unregister_code (KC_LWIN);
     }
 }
 
@@ -216,12 +220,12 @@ void p8_tap (qk_tap_dance_state_t *state, void *user_data) {
 
 void p8_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
-        unregister_code (KC_LWIN);
         unregister_code (KC_F8);
+        unregister_code (KC_LWIN);
     } else {
-        unregister_code (KC_LWIN);
-        unregister_code (KC_LALT);
         unregister_code (KC_F8);
+        unregister_code (KC_LALT);
+        unregister_code (KC_LWIN);
     }
 }
 
@@ -239,12 +243,12 @@ void p9_tap (qk_tap_dance_state_t *state, void *user_data) {
 
 void p9_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
-        unregister_code (KC_LWIN);
         unregister_code (KC_F9);
+        unregister_code (KC_LWIN);
     } else {
-        unregister_code (KC_LWIN);
-        unregister_code (KC_LALT);
         unregister_code (KC_F9);
+        unregister_code (KC_LALT);
+        unregister_code (KC_LWIN);
     }
 }
 
@@ -262,12 +266,12 @@ void p10_tap (qk_tap_dance_state_t *state, void *user_data) {
 
 void p10_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
-        unregister_code (KC_LWIN);
         unregister_code (KC_F10);
+        unregister_code (KC_LWIN);
     } else {
-        unregister_code (KC_LWIN);
-        unregister_code (KC_LALT);
         unregister_code (KC_F10);
+        unregister_code (KC_LALT);
+        unregister_code (KC_LWIN);
     }
 }
 
@@ -285,12 +289,12 @@ void p11_tap (qk_tap_dance_state_t *state, void *user_data) {
 
 void p11_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
-        unregister_code (KC_LWIN);
         unregister_code (KC_F11);
+        unregister_code (KC_LWIN);
     } else {
-        unregister_code (KC_LWIN);
-        unregister_code (KC_LALT);
         unregister_code (KC_F11);
+        unregister_code (KC_LALT);
+        unregister_code (KC_LWIN);
     }
 }
 
@@ -308,12 +312,12 @@ void p12_tap (qk_tap_dance_state_t *state, void *user_data) {
 
 void p12_tap_end (qk_tap_dance_state_t *state, void *user_data) {
     if (state->count == 1) {
-        unregister_code (KC_LWIN);
         unregister_code (KC_F12);
+        unregister_code (KC_LWIN);
     } else {
-        unregister_code (KC_LWIN);
-        unregister_code (KC_LALT);
         unregister_code (KC_F12);
+        unregister_code (KC_LALT);
+        unregister_code (KC_LWIN);
     }
 }
 
