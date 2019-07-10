@@ -1,11 +1,9 @@
 # ANSI Layout with VIM style arrows
 There are 3 layers with this configuration.
 
-## Layer 0: Default
-![Layer 0](https://i.imgur.com/TT75uvD.jpg)
+1. Layer 0 - default layer
+2. Layer 1 - arrows, function keys, and more
+3. Layer 2 - volume up & down
+4. Layer 3 - EEPROM reset & boot mode reset
 
-## Layer 1: VIM Arrows
-![Layer 1](https://i.imgur.com/EpS3chk.jpg)
-
-## Layer 2: Eeprom Reset & Boot Mode
-![Layer 2](https://i.imgur.com/wAnZwdd.jpg)
+![Keymap](https://imgur.com/sdhimjD)
