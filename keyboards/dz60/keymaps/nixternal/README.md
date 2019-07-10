@@ -6,4 +6,4 @@ There are 3 layers with this configuration.
 3. Layer 2 - volume up & down
 4. Layer 3 - EEPROM reset & boot mode reset
 
-![Keymap](https://imgur.com/sdhimjD)
+![Keymap](https://i.imgur.com/sdhimjD.jpg)
