@@ -6,8 +6,6 @@
 #define _L2 2
 #define _L3 3
 
-#define _______ KC_TRNS
-
 enum {
     TD_KC_LSFT_CAPS,
     TD_KC_RSFT_CAPS,
