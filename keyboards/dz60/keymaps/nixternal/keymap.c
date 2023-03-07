@@ -132,7 +132,7 @@ void matrix_scan_user(void) {
 }
 
 /* Tap Dance Definitions */
-qk_tap_dance_action_t tap_dance_actions[] = {
+tap_dance_action_t tap_dance_actions[] = {
     // Tap shift for shift, double tap for capslock
     [TD_KC_LSFT_CAPS] = ACTION_TAP_DANCE_DOUBLE(KC_LSFT, KC_CAPS),
     [TD_KC_RSFT_CAPS] = ACTION_TAP_DANCE_DOUBLE(KC_RSFT, KC_CAPS),
