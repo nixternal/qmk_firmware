@@ -104,30 +104,19 @@ bool has_layer_changed = true;
 
 void matrix_scan_user(void) {
     uint8_t layer = biton32(layer_state);
-    static uint8_t old_layer = 0;
-
-    if (old_layer != layer) {
-        has_layer_changed = true;
-        old_layer = layer;
-    }
-
-    if (has_layer_changed) {
-        has_layer_changed = false;
-
-        switch (layer) {
-            case _L0:
-                backlight_set(0);
-                break;
-            case _L1:
-                backlight_set(1);
-                break;
-            case _L2:
-                backlight_set(2);
-                break;
-            case _L3:
-                backlight_set(3);
-                break;
-        }
+    switch (layer) {
+        case _L1:
+            backlight_set(1);
+            break;
+        case _L2:
+            backlight_set(2);
+            break;
+        case _L3:
+            backlight_set(3);
+            break;
+        default:
+            backlight_set(0);
+            break;
     }
 }
 
